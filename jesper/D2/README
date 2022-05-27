@@ -1,0 +1,10 @@
+# Compile:
+
+install cython:
+	pip install cython
+
+run setup:
+	python setup.py build_ext --inplace
+
+run:
+	python d2_1.py input.txt
