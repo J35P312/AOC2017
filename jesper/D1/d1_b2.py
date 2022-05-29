@@ -10,10 +10,12 @@ def main(infile):
 	captcha_len=len(captcha)
 	steps=int(captcha_len/2)
 
+	#make a longer list, then we do not need to care about circular behaviour of the input	
 	double_captcha=captcha+captcha
 
 	for i in range(0,len(captcha)):
 
+		#find position in the longer list
 		pos_matching=i+steps
 
 		if captcha[i] == double_captcha[pos_matching]:
