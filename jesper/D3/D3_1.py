@@ -5,6 +5,7 @@ import math
 
 #the input
 target=312051
+#target=361527
 #target=1024
 
 #we start with a box of one layer, and add layers until the box contain our target.
