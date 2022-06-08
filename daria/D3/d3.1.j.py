@@ -1,9 +1,5 @@
 import math
-
-n = 361527 #input
-#n=312051
-#n=12
-#n=20
+n=23
 
 current_max=[1]
 row_length=[1]
@@ -18,11 +14,12 @@ while current_max[-1] < n:
 	row_length.append(row_length[-1]+2)
 
 sq = row_length[-1]
+print(sq)
 pivots = [sq*sq - k*(sq-1) for k in range(5)]
 
 for p in pivots:
     dist = abs(p - n)
-
+    print(dist)
     if dist <= (sq-1)//2:
         print(sq-1-dist)
         break

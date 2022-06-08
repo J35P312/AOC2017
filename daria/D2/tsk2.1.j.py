@@ -6,7 +6,7 @@ import pandas as pd
 #open csv, skip header
 my_df = pd.read_csv('input.txt', sep = '\t', header=None)
 
-#print(my_df)
+print(my_df)
 
 #generate a "list" of all  maxmimum values (line), first value will correspond to first line, second to second line etc
 max_element = my_df.max(axis=1)
