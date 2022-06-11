@@ -2,9 +2,10 @@ import math
 
 def main(n):
     #remember to round up, if you round down, the matrix size gets too small!
-    sq = int( math.ceil((math.sqrt(n))) )
+    sq = int( math.ceil(math.sqrt(n)) )
 
-    #our matrix is always an odd number long, if it is even, you must add one, or the spiral wont fit!
+    #our matrix is always an odd number long, if it is even, you must
+    #add one, or the spiral wont fit!
     if not sq % 2:
        sq +=1
 
